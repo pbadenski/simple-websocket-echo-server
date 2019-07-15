@@ -1,6 +1,6 @@
 var port = 8080,
 	WebSocketServer = require('ws').Server,
-	wss = new WebSocketServer({ port: port });
+	wss = new WebSocketServer({ host: "127.0.0.1", port: port });
 
 console.log('listening on port: ' + port);
 
